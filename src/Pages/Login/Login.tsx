@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/auth";
 
 const Login: React.FC = () => {
+  const auth = useContext(AuthContext);
+
   const login = (e: any) => {
     e.preventDefault();
+    let { email, password } = e.target.elements;
+    email = email.value.trim();
+    password = password.value.trim();
+    auth.login({ email, password });
   };
 
   return (
