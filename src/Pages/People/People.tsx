@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Loading from "../../Components/Loading";
-import Person from "../../Components/Person/Person";
+import PersonCard from "../../Components/PersonCard/PersonCard";
 import { mockPeople } from "../../mocks/people";
 import { iPeople, iPerson } from "../../types/person";
 
@@ -19,7 +19,7 @@ const People: React.FC = () => {
         {!loading ? (
           persons &&
           persons.map((person: iPerson) => (
-            <Person key={person.id} {...person} />
+            <PersonCard key={person.id} {...person} />
           ))
         ) : (
           <Loading />

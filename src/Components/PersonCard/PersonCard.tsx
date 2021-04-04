@@ -2,7 +2,7 @@ import React from "react";
 import { Col, CardGroup, Card } from "react-bootstrap";
 import { iPerson } from "../../types/person";
 
-const Person: React.FC<iPerson> = (person: iPerson) => {
+const PersonCard: React.FC<iPerson> = (person: iPerson) => {
   return (
     <Col md={3} sm={12}>
       <CardGroup>
@@ -30,4 +30,4 @@ const Person: React.FC<iPerson> = (person: iPerson) => {
   );
 };
 
-export default Person;
+export default PersonCard;
