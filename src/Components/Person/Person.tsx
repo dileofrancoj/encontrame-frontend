@@ -1,6 +1,11 @@
 import React from "react";
 import { Col, CardGroup, Card } from "react-bootstrap";
 import { iPerson } from "../../types/person";
+import styled from "styled-components";
+
+const CardFooter = styled(Card.Footer)`
+  width: 100%;
+`;
 
 const Person: React.FC<iPerson> = (person: iPerson) => {
   return (
@@ -22,9 +27,9 @@ const Person: React.FC<iPerson> = (person: iPerson) => {
           </Card.Title>
           <Card.Text>{person.description}</Card.Text>
         </Card.Body>
-        <Card.Footer>
+        <CardFooter>
           <small className="text-muted">{person.lastSeen}</small>
-        </Card.Footer>
+        </CardFooter>
       </CardGroup>
     </Col>
   );
