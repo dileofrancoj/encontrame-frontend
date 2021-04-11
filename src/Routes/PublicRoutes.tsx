@@ -34,7 +34,7 @@ const PublicRoutes = () => {
       {/* navbar */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/personas" component={People} />
+        <Route path="/personas" exact component={People} />
         <Route path="/login" component={Login} />
         <PrivateRoute
           path="/personas/alta"

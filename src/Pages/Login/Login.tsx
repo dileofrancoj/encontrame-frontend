@@ -43,10 +43,7 @@ const Login: React.FC = () => {
 
   return (
     <Container>
-      <Row
-        className="justify-content-center align-items-center"
-        style={{ height: "75vh" }}
-      >
+      <Row>
         <Col md={6} sm={12}>
           <Form onSubmit={handleSubmit(login)}>
             <Form.Group>
