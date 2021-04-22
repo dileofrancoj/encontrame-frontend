@@ -1,5 +1,5 @@
-import { FormEvent } from "react";
+import { iPerson } from "./person";
 
 export interface iForm {
-  onSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  onSubmit: (data: iPerson) => void;
 }

@@ -13,7 +13,7 @@ export const mockPeople: iPeople = [
     contactEmail: "email mock",
     zone: "Zone mock",
     coords: "coords mock",
-    gender: "Sex mock",
+    gender: "Masculino",
     lastSeen: "date mock",
     birthday: "birthday mock",
   },
